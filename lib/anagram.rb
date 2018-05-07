@@ -10,7 +10,7 @@ attr_accessor :word
   def match(anagram_candidates)
     matcher = word.split("")
     matches = []
-    anagram_candidates.find do |option|
+    anagram_candidates.collect do |option|
       option_array = option.split("")
         if option_array.sort == matcher.sort
           matches << option
