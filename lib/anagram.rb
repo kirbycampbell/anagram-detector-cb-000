@@ -2,7 +2,7 @@
 class Anagram
 
 attr_accessor :word
-@matches = []
+
   def initialize(word)
     @word = word
   end
@@ -13,11 +13,11 @@ attr_accessor :word
     anagram_candidates.find do |option|
       option_array = option.split("")
         if option_array.sort == matcher.sort
-          @matches << option
+          option
         end
 
       end
-      @matches
+
   end
 
 end
