@@ -1,1 +1,10 @@
-# Your code goes here!
+def Anagram
+
+
+  def initialize(word)
+
+  end
+
+
+
+end
