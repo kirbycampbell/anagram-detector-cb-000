@@ -10,11 +10,10 @@ attr_accessor :word
 
     anagram_candidates.find do |option|
       option_array = option.split("")
-        if option_array == matcher
+        if option_array.sort == matcher.sort
           option
         end
       end
   end
 
 end
-  
